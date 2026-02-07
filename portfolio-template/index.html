@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Селиванов Даниил</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<header class="header" id="home">
+    <div class="container header__inner">
+        <a class="brand" href="#home">Портфолио</a>
+
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" aria-label="Навигация">
+            <a class="nav__link" href="#home">Домой</a>
+            <a class="nav__link" href="#about">Обо мне</a>
+            <a class="nav__link" href="#hobbies">Хобби</a>
+            <a class="nav__link" href="#skills">Навыки</a>
+            <a class="nav__link" href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero section">
+    <div class="container hero__grid">
+        <div class="hero__text reveal">
+            <h1 class="hero__title">Привет!</h1>
+            <p class="hero__subtitle">Я <b>Даня</b> и это моё небольшое портфолио.</p>
+
+            <div class="hero__actions">
+                <a class="btn" href="#about">Узнать больше</a>
+                <a class="btn btn--ghost" href="#contacts">Контакты</a>
+            </div>
+        </div>
+
+        <div class="hero__card reveal">
+            <div class="hero__cardGlow"></div>
+            <div class="hero__cardInner">
+                <p class="muted">Коротко обо мне:</p>
+                <ul class="bullets">
+                    <li>Студент</li>
+                    <li>Люблю делать красивые сайты</li>
+                    <li>Интересуюсь программированием</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="container">
+        <div class="section__head reveal">
+            <h2>Обо мне</h2>
+            <p class="muted">
+                Я самый обычный студент. Люблю учиться и обожаю программирование
+            </p>
+        </div>
+
+        <div class="about__grid">
+            <div class="about__text reveal">
+                <p>
+                    Хочу развивать себя как FullStack разработчик. Интересуюсь программированием, так же хочу усовершенствовать навыки дизайна!
+                </p>
+                <p class="muted">
+                    Ниже — мини-галерея.
+                </p>
+            </div>
+
+            <div class="gallery reveal" aria-label="Галерея">
+                <img src="img/about-1.jpg" alt="Фото 1" loading="lazy">
+                <img src="img/about-2.jpg" alt="Фото 2" loading="lazy">
+                <img src="img/about-3.jpg" alt="Фото 3" loading="lazy">
+                <img src="img/about-4.jpg" alt="Фото 4" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hobbies -->
+<section class="section" id="hobbies">
+    <div class="container">
+        <div class="section__head reveal">
+            <h2>Хобби</h2>
+            <p class="muted">Несколько карточек обо мне!</p>
+        </div>
+
+        <div class="cards">
+            <article class="card reveal">
+                <div class="card__icon">🚲</div>
+                <h3>Езда на самокате</h3>
+                <p class="muted">Мой любимый способ передвижение. Быстро и бесплатно)</p>
+            </article>
+
+            <article class="card reveal">
+                <div class="card__icon">🎸</div>
+                <h3>Гитара</h3>
+                <p class="muted">Увлекаюсь игрой на гитаре, хорошо помогает разбавить жизнь!</p>
+            </article>
+
+            <article class="card reveal">
+                <div class="card__icon">🌙</div>
+                <h3>Сова</h3>
+                <p class="muted">Здоровый сон — это не про меня.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="section" id="skills">
+    <div class="container">
+        <div class="section__head reveal">
+            <h2>Навыки</h2>
+            <p class="muted">Я не уверен насколько это правдиво, но доверьтесь мне</p>
+        </div>
+
+        <div class="skills reveal">
+            <div class="skill" data-percent="35">
+                <div class="skill__row">
+                    <span>HTML</span><span class="skill__value">35%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="35">
+                <div class="skill__row">
+                    <span>CSS</span><span class="skill__value">35%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="10">
+                <div class="skill__row">
+                    <span>JavaScript</span><span class="skill__value">10%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="10">
+                <div class="skill__row">
+                    <span>Python</span><span class="skill__value">10%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="10">
+                <div class="skill__row">
+                    <span>C#</span><span class="skill__value">10%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts -->
+<section class="section" id="contacts">
+    <div class="container">
+        <div class="section__head reveal">
+            <h2>Контакты</h2>
+            <p class="muted">Не пишите мне. Умоляю!</p>
+        </div>
+
+        <div class="contacts">
+            <a class="contact reveal" href="https://t.me/irgellar" target="_blank" rel="noreferrer">
+                <div class="contact__icon">✈️</div>
+                <div>
+                    <div class="contact__title">Телеграм</div>
+                    <div class="muted">@irgellar</div>
+                </div>
+            </a>
+
+            <a class="contact reveal" href="mailto:dan.selivanoff@gmail.com">
+                <div class="contact__icon">✉️</div>
+                <div>
+                    <div class="contact__title">Почта</div>
+                    <div class="muted">dan.selivanoff@gmail.com</div>
+                </div>
+            </a>
+
+            <a class="contact reveal" href="tel:+79493872850">
+                <div class="contact__icon">📞</div>
+                <div>
+                    <div class="contact__title">Телефон</div>
+                    <div class="muted">+7 (949) 387-28-50</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span class="muted">© <span id="year"></span> Моё портфолио</span>
+        <a class="toTop" href="#home">Наверх ↑</a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
