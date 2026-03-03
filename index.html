@@ -2,207 +2,154 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Селиванов Даниил</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<header class="header" id="home">
-    <div class="container header__inner">
-        <a class="brand" href="#home">Портфолио</a>
+<header class="topbar">
+    <div class="container topbar__inner">
+        <a class="logo" href="#home">Портфолио</a>
 
-        <!-- CSS-only burger -->
-        <input class="navToggle" type="checkbox" id="navToggle" aria-label="Открыть меню" />
-
-        <label class="burger" for="navToggle" aria-hidden="true">
-            <span></span><span></span><span></span>
-        </label>
-
-        <nav class="nav" aria-label="Навигация">
-            <a class="nav__link" href="#home">Домой</a>
-            <a class="nav__link" href="#about">Обо мне</a>
-            <a class="nav__link" href="#hobbies">Хобби</a>
-            <a class="nav__link" href="#skills">Навыки</a>
-            <a class="nav__link" href="#contacts">Контакты</a>
+        <nav class="nav">
+            <a href="#home">Основная информация</a>
+            <a href="#photos">Фото</a>
+            <a href="#education">Образование</a>
+            <a href="#contacts">Контакты</a>
         </nav>
     </div>
 </header>
 
-<section class="hero section">
-    <div class="container hero__grid">
-        <div class="hero__text reveal">
-            <h1 class="hero__title">Здравствуйте!</h1>
-            <p class="hero__subtitle">Я <b>Даниил</b> и это моё портфолио.</p>
+<main id="home">
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__text">
+                <p class="badge">Портфолио</p>
+                <h1>Селиванов Даниил</h1>
+                <p class="lead">
+                    Коротко о себе: люблю учиться, программировать, развиваться.
+                </p>
 
-            <div class="hero__actions">
-                <a class="btn" href="#about">Узнать больше</a>
-                <a class="btn btn--ghost" href="#contacts">Контакты</a>
+                <div class="quick">
+                    <div class="quick__item">
+                        <div class="quick__k">Телефон</div>
+                        <div class="quick__v">+7 (949) 525-23-63</div>
+                    </div>
+                    <div class="quick__item">
+                        <div class="quick__k">Email</div>
+                        <div class="quick__v">daniilsel@gmail.com</div>
+                    </div>
+                    <div class="quick__item">
+                        <div class="quick__k">Город</div>
+                        <div class="quick__v">Донецк</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__media">
+                <img
+                        class="hero__photo"
+                        src="img/photo_2026-02-04_15-06-39.jpg"
+                        alt="Моё фото"
+                />
             </div>
         </div>
+    </section>
 
-        <div class="hero__card reveal">
-            <div class="hero__cardGlow"></div>
-            <div class="hero__cardInner">
-                <p class="muted">Коротко обо мне:</p>
-                <ul class="bullets">
-                    <li>Студент</li>
-                    <li>Учусь</li>
-                    <li>Классно</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="about">
-    <div class="container">
-        <div class="section__head reveal">
-            <h2>Обо мне</h2>
+    <section class="section">
+        <div class="container">
+            <h2>Ключевая информация</h2>
             <p class="muted">
-                Немного обо мне...
+                Люблю заниматься программированием,
+                писать различный код и делать что-то новое.
+                Интересно развивать себя в других направлениях и всё.
             </p>
-        </div>
 
-        <div class="about__grid">
-            <div class="about__text reveal">
-                <p>
-                    Люблю программировать
-                </p>
-                <p class="muted">
-                    Ниже — мини-галерея.
-                </p>
+            <div class="grid2">
+                <article class="card">
+                    <h3>Личные качества</h3>
+                    <ul class="list">
+                        <li>Критическое мышление</li>
+                        <li>Ответственность</li>
+                        <li>Вежливость</li>
+                        <li>Аккуратность</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Компьютерные навыки</h3>
+                    <ul class="list">
+                        <li>Уверенный пользователь ПК</li>
+                        <li>Word / Excel / PowerPoint</li>
+                        <li>Изучаю: HTML, CSS, Python, C#</li>
+                    </ul>
+                </article>
             </div>
+        </div>
+    </section>
 
-            <div class="gallery reveal" aria-label="Галерея">
-                <img src="img/about-1.jpg" alt="Фото 1" loading="lazy">
-                <img src="img/about-2.jpg" alt="Фото 2" loading="lazy">
-                <img src="img/about-3.jpg" alt="Фото 3" loading="lazy">
-                <img src="img/about-4.jpg" alt="Фото 4" loading="lazy">
+    <section class="section" id="photos">
+        <div class="container">
+            <h2>Фото</h2>
+            <p class="muted">Небольшая галерея.</p>
+
+            <div class="gallery">
+                <img src="https://imgholder.ru/800x800/8493a8/adb9ca&text=%D0%A4%D0%BE%D1%82%D0%BE+%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0+1&font=kelson" alt="Фото 1" />
+                <img src="https://imgholder.ru/800x800/8493a8/adb9ca&text=%D0%A4%D0%BE%D1%82%D0%BE+%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0+2&font=kelson" alt="Фото 2" />
+                <img src="https://imgholder.ru/800x800/8493a8/adb9ca&text=%D0%A4%D0%BE%D1%82%D0%BE+%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0+3&font=kelson" alt="Фото 3" />
+                <img src="https://imgholder.ru/800x800/8493a8/adb9ca&text=%D0%A4%D0%BE%D1%82%D0%BE+%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0+4&font=kelson" alt="Фото 4" />
+                <img src="https://imgholder.ru/800x800/8493a8/adb9ca&text=%D0%A4%D0%BE%D1%82%D0%BE+%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0+5&font=kelson" alt="Фото 5" />
+                <img src="https://imgholder.ru/800x800/8493a8/adb9ca&text=%D0%A4%D0%BE%D1%82%D0%BE+%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0+6&font=kelson" alt="Фото 6" />
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Hobbies -->
-<section class="section" id="hobbies">
-    <div class="container">
-        <div class="section__head reveal">
-            <h2>Хобби</h2>
-            <p class="muted">Тут хобби</p>
-        </div>
+    <section class="section" id="education">
+        <div class="container">
+            <h2>Образование</h2>
 
-        <div class="cards">
-            <article class="card reveal">
-                <div class="card__icon">🚲</div>
-                <h3>Езжу на самокате</h3>
-                <p class="muted">Круто!</p>
-            </article>
-
-            <article class="card reveal">
-                <div class="card__icon">🖥️</div>
-                <h3>Играю в игры!</h3>
-                <p class="muted">Респект!</p>
-            </article>
-
-            <article class="card reveal">
-                <div class="card__icon">🏫</div>
-                <h3>Учусь</h3>
-                <p class="muted">Умный</p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- Skills -->
-<section class="section" id="skills">
-    <div class="container">
-        <div class="section__head reveal">
-            <h2>Навыки</h2>
-            <p class="muted">Что-то раньше изучал</p>
-        </div>
-
-        <div class="skills reveal">
-            <div class="skill" style="--p:35">
-                <div class="skill__row">
-                    <span>HTML</span><span class="skill__value">35%</span>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content card">
+                        <h3>ГБОУ "Лицей №12 г.о. Донецк"</h3>
+                        <p class="muted">2014 - 2025 • Среднее общее образование</p>
+                    </div>
                 </div>
-                <div class="skill__bar"><div class="skill__fill"></div></div>
-            </div>
-
-            <div class="skill" style="--p:35">
-                <div class="skill__row">
-                    <span>CSS</span><span class="skill__value">35%</span>
-                </div>
-                <div class="skill__bar"><div class="skill__fill"></div></div>
-            </div>
-
-            <div class="skill" style="--p:10">
-                <div class="skill__row">
-                    <span>JavaScript</span><span class="skill__value">10%</span>
-                </div>
-                <div class="skill__bar"><div class="skill__fill"></div></div>
-            </div>
-
-            <div class="skill" style="--p:10">
-                <div class="skill__row">
-                    <span>Python</span><span class="skill__value">10%</span>
-                </div>
-                <div class="skill__bar"><div class="skill__fill"></div></div>
-            </div>
-
-            <div class="skill" style="--p:10">
-                <div class="skill__row">
-                    <span>C#</span><span class="skill__value">10%</span>
-                </div>
-                <div class="skill__bar"><div class="skill__fill"></div></div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contacts -->
-<section class="section" id="contacts">
-    <div class="container">
-        <div class="section__head reveal">
+    <section class="section" id="contacts">
+        <div class="container">
             <h2>Контакты</h2>
-            <p class="muted">Связаться</p>
+
+            <div class="grid2">
+                <div class="card">
+                    <h3>Связаться</h3>
+                    <p><b>Email:</b> <a href="mailto:daniilsel@gmail.com">daniilsel@gmail.com</a></p>
+                    <p><b>Телефон:</b> <a href="tel:+7 (949) 525-23-63">+7 (949) 525-23-63</a></p>
+                    <p><b>VK:</b> <a href="#">vk.com/posatlwn</a></p>
+                    <p><b>Telegram:</b> <a href="#">@posatlwn</a></p>
+                </div>
+
+                <div class="card">
+                    <h3>Короткая заметка</h3>
+                    <p class="muted">
+                        Сайт сделан на коленке. Просьба строго не судить
+                    </p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="contacts">
-            <a class="contact reveal" href="https://t.me/qwerty" target="_blank" rel="noreferrer">
-                <div class="contact__icon">✈️</div>
-                <div>
-                    <div class="contact__title">Телеграм</div>
-                    <div class="muted">@qwerty</div>
-                </div>
-            </a>
-
-            <a class="contact reveal" href="mailto:qwerty@qwerty.qwerty">
-                <div class="contact__icon">✉️</div>
-                <div>
-                    <div class="contact__title">Почта</div>
-                    <div class="muted">qwerty@qwerty.qwerty</div>
-                </div>
-            </a>
-
-            <a class="contact reveal" href="tel:+qwertyqwert">
-                <div class="contact__icon">📞</div>
-                <div>
-                    <div class="contact__title">Телефон</div>
-                    <div class="muted">+Q (WER) TYQ-WE-RT</div>
-                </div>
-            </a>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="muted">© 2026 Селиванов Д.С.</span>
+            <a class="muted" href="#home">Наверх ↑</a>
         </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container footer__inner">
-        <span class="muted">© 2026 Моё портфолио</span>
-        <a class="toTop" href="#home">Наверх ↑</a>
-    </div>
-</footer>
-
+    </footer>
+</main>
 </body>
 </html>
